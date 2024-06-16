@@ -27,7 +27,6 @@
     width: 800px;
     height: 180px ;
     position: relative;
-
 }
 
 .clock {
@@ -69,25 +68,91 @@
     content: 'SEC';
 }
 
-/*.hero::before {
-    content: '';
-    width: 180px;
-    height: 180px;
-    background: #f41b75;
-    border-radius: 5px;
-    position: absolute;
-    left:  -50px;
-    top: -50px;
+
+@media (max-width: 600px) {
+    .clock span {
+        font-size: 30px;
+        width: 50px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        bottom: 2%;
+    }
+    
+    .clock span::after {
+        font-size: 20px;
+        position: absolute;
+        top: 60px;
+        left:  90%;
+        transform: translate(-50%);
+    }
+
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #08001f, #30197d);
+        color: #fff;
+        position: relative;
+    }
+    
+    #date {
+        position: absolute;
+        top: 10%;
+        letter-spacing: 2px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .hero {
+        width: 90%;
+        height: 30% ;
+        position: relative;
+    }
+    
+    .clock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        border-radius: 20px;
+        backdrop-filter: blur(40px);
+        width: 100%;
+        height:100%
+    }
 }
 
-hero::after {
-    content: '';
-    width: 180px;
-    height: 180px;
-    background: #419aff;
-    border-radius: 50%;
-    position: absolute;
-    right: -30px;
-    bottom: -50px;
+
+    
+        
+
+
+
+
+
+
+
+/* max 600px / min 601/ min 768 / min 992 / min 1200  */
+/* @media (max-width: 600px) {
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #08001f, #8c8897);
+        color: #fff;
+        position: relative;
+    }
+}
+
+@media (min-width: 601px) {
+
+}
+
+@media (min-width: 768) {
+
 }
 */
